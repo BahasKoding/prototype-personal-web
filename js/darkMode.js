@@ -54,12 +54,6 @@ function initializeDarkMode() {
             themeToggleMobile.addEventListener('click', toggleDarkMode);
         }
 
-        // Mobile menu handler
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
     });
 }
 

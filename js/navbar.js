@@ -49,25 +49,39 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu toggle functionality
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     if (mobileMenuButton && mobileMenu) {
-        // Toggle mobile menu visibility
-        mobileMenuButton.addEventListener('click', () => {
+        // Debug untuk memastikan elemen ditemukan
+        console.log('Mobile menu button found:', mobileMenuButton);
+        console.log('Mobile menu found:', mobileMenu);
+
+        // Toggle mobile menu visibility dengan animasi
+        mobileMenuButton.addEventListener('click', (e) => {
+            e.stopPropagation(); // Mencegah event bubbling
             console.log('Mobile menu button clicked');
+            
+            // Toggle class untuk animasi
             mobileMenu.classList.toggle('hidden');
+            
+            // Debug status menu
+            console.log('Menu is now:', mobileMenu.classList.contains('hidden') ? 'hidden' : 'visible');
         });
 
-        // Close mobile menu when clicking outside
+        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
+            if (!mobileMenuButton.contains(e.target) && 
+                !mobileMenu.contains(e.target) && 
+                !mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.add('hidden');
             }
         });
 
-        // Close mobile menu when a link is clicked
+        // Close menu when clicking links
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
+    } else {
+        console.error('Mobile menu elements not found!');
     }
 
     // Enhanced scroll behavior
