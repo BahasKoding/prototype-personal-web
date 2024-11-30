@@ -12,6 +12,8 @@
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="shortcut icon" href="img/test.png" type="image/x-icon">
     <link rel="stylesheet" href="src/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/contact.js"></script>
     <script src="js/darkMode.js"></script>
 
     <style>
@@ -262,7 +264,9 @@
             </div>
 
             <!-- WhatsApp button -->
-            <a href="https://wa.me/6281290413175" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/6281290413175?text=Halo%20Rai%2C%20saya%20ingin%20bekerja%20sama%20dengan%20anda" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 class="relative flex items-center group">
                 <!-- Tooltip -->
                 <div class="absolute right-full mr-4 invisible group-hover:visible">
@@ -815,7 +819,7 @@
                 </div>
 
                 <!-- Contact Form -->
-                <form id="contact-form" class="space-y-6" data-aos="fade-left">
+                <form id="contact-form" name="contact-form" class="space-y-6" data-aos="fade-left">
                     <div class="relative">
                         <div class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-gray-400">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -824,7 +828,7 @@
                             </svg>
                         </div>
                         <input type="text" placeholder="Your Name" required
-                            class="w-full pl-12 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 hover:border-blue-400 dark:hover:border-blue-500">
+                            class="w-full pl-12 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 hover:border-blue-400 dark:hover:border-blue-500" name="nama">
                     </div>
                     <div class="relative">
                         <div class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-gray-400">
@@ -834,7 +838,7 @@
                             </svg>
                         </div>
                         <input type="email" placeholder="Your Email" required
-                            class="w-full pl-12 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 hover:border-blue-400 dark:hover:border-blue-500">
+                            class="w-full pl-12 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 hover:border-blue-400 dark:hover:border-blue-500" name="email">
                     </div>
                     <div class="relative">
                         <div class="absolute top-3 left-3 flex items-start pointer-events-none text-gray-400">
@@ -844,7 +848,7 @@
                             </svg>
                         </div>
                         <textarea placeholder="Your Message" rows="4" required
-                            class="w-full pl-12 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 hover:border-blue-400 dark:hover:border-blue-500 resize-none"></textarea>
+                            class="w-full pl-12 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 hover:border-blue-400 dark:hover:border-blue-500 resize-none" name="pesan"></textarea>
                     </div>
                     <button type="submit"
                         class="group w-full md:w-auto px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-500 dark:to-blue-400 text-white rounded-lg hover:from-blue-700 hover:to-blue-600 dark:hover:from-blue-600 dark:hover:to-blue-500 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg flex items-center justify-center space-x-2">
@@ -944,6 +948,7 @@
 
     <!-- Scripts -->
     <script src="js/navbar.js"></script>
+ 
     <script>
         // Initialize AOS
         AOS.init({
