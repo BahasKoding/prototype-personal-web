@@ -49,18 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu toggle functionality
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     if (mobileMenuButton && mobileMenu) {
+        // Toggle mobile menu visibility
         mobileMenuButton.addEventListener('click', () => {
+            console.log('Mobile menu button clicked');
             mobileMenu.classList.toggle('hidden');
         });
 
+        // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!mobileMenuButton.contains(e.target) &&
-                !mobileMenu.contains(e.target) &&
-                !mobileMenu.classList.contains('hidden')) {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.add('hidden');
             }
         });
 
+        // Close mobile menu when a link is clicked
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
