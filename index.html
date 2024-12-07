@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Web BahasKoding</title>
+    <title>Personal Web Rai</title>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -15,55 +15,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/contact.js"></script>
     <script src="js/darkMode.js"></script>
-
-    <style>
-        @keyframes starAnimation {
-
-            0%,
-            100% {
-                opacity: 0.2;
-                transform: scale(0.5);
-            }
-
-            50% {
-                opacity: 0.8;
-                transform: scale(1);
-            }
-        }
-
-        .star {
-            position: absolute;
-            display: inline-flex;
-            mix-blend-mode: lighten;
-        }
-
-        .service-card {
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-
-        /* Tambahkan di bagian <style> atau file CSS Anda */
-        #mobile-menu {
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-        }
-
-        #mobile-menu.hidden {
-            opacity: 0;
-            transform: translateY(-10px);
-            pointer-events: none;
-        }
-
-        #mobile-menu:not(.hidden) {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
-        }
-    </style>
-</head>
 </head>
 
 <body class="bg-white dark:bg-gray-900 transition-colors duration-300">
@@ -77,7 +28,7 @@
                     data-aos="fade-right">
                     <a href="#home"
                         class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
-                        BahasKoding
+                        Rai
                     </a>
                 </div>
 
@@ -161,28 +112,19 @@
             </div>
         </nav>
     </header>
-    <script>
-        // Initialize dark mode based on local storage
-        if (localStorage.theme === 'dark') {
-            document.documentElement.classList.add('dark');
-        }
-    </script>
+
     <!-- Hero Section -->
-    <section id="home"
-        class="relative min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 overflow-hidden pt-20 md:pt-10 lg:pt-0">
-        <div class="container mx-auto px-6 py-12 lg:py-20 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center max-w-7xl mx-auto">
-                <!-- Image Container - Made smaller -->
-                <div class="w-full lg:w-1/2 mb-12 lg:mb-0 order-1" data-aos="fade-up">
-                    <div class="relative max-w-[480px] mx-auto">
-                        <!-- Image stars container -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 overflow-hidden pt-20 lg:pt-0">
+        <div class="container mx-auto px-4 sm:px-8 lg:px-6 py-8 sm:py-12 lg:py-20 relative z-10">
+            <div class="flex flex-col sm:flex-row items-center max-w-7xl mx-auto sm:space-x-8 lg:space-x-12">
+                <!-- Image Container - Hidden only on mobile -->
+                <div class="w-full sm:w-1/2 mb-12 sm:mb-0 order-1 hidden sm:block" data-aos="fade-up">
+                    <div class="relative max-w-[420px] sm:max-w-[380px] lg:max-w-[480px] mx-auto">
+                        <!-- Rest of the image container code remains the same -->
                         <div id="image-stars" class="absolute inset-0 hidden dark:block overflow-hidden"></div>
                         <div class="relative">
-                            <!-- Decorative background -->
-                            <div
-                                class="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-10 dark:opacity-20 blur-xl">
+                            <div class="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-10 dark:opacity-20 blur-xl">
                             </div>
-                            <!-- Main image container -->
                             <div class="relative p-2 bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm rounded-2xl">
                                 <img src="img/test.png" alt="Professional AI Picture"
                                     class="relative w-full h-auto object-cover shadow-2xl border-4 border-white/50 dark:border-gray-700/50 rounded-xl" />
@@ -192,49 +134,44 @@
                 </div>
 
                 <!-- Content -->
-                <div class="w-full lg:w-1/2 text-center lg:text-left order-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-full sm:w-1/2 text-center sm:text-left order-2 px-4 sm:px-0" data-aos="fade-up" data-aos-delay="200">
                     <!-- Professional Title Labels -->
-                    <div class="flex flex-wrap gap-3 justify-center lg:justify-start mb-6">
-                        <span
-                            class="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium">
+                    <div class="flex flex-wrap gap-2 justify-center sm:justify-start mb-4 sm:mb-6">
+                        <span class="px-3 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs sm:text-sm font-medium">
                             Web Developer
                         </span>
-                        <span
-                            class="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium">
+                        <span class="px-3 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs sm:text-sm font-medium">
                             Content Creator
                         </span>
                     </div>
 
-                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                        Rai Rakhmat Syarifudin Supardi
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight">
+                        Rai Rakhmat<br class="block sm:hidden"> Syarifudin Supardi
                     </h1>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                        Information Systems Student passionate about crafting digital experiences through modern web
-                        development.
+                    <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-md mx-auto sm:mx-0">
+                        Information Systems Student passionate about crafting digital experiences through modern web development.
                         Dedicated to sharing knowledge and inspiring others through educational content creation.
                     </p>
-                    <!-- Social Links - Larger icons -->
-                    <div class="flex justify-center lg:justify-start space-x-4">
+
+                    <!-- Social Links -->
+                    <div class="flex justify-center sm:justify-start space-x-3">
                         <a href="https://github.com/BahasKoding" target="_blank" rel="noopener noreferrer"
-                            class="p-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-300 hover:-translate-y-1">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                            class="p-2.5 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-300 hover:-translate-y-1 active:scale-95">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
                             </svg>
                         </a>
                         <a href="https://www.linkedin.com/in/rai-rakhmat-syarifudin-supardi-b04818236" target="_blank"
                             rel="noopener noreferrer"
-                            class="p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-all duration-300 hover:-translate-y-1">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            class="p-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-all duration-300 hover:-translate-y-1 active:scale-95">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                             </svg>
                         </a>
                         <a href="mailto:business.rkhmt@gmail.com"
-                            class="p-3 bg-red-600 text-white rounded-lg hover:bg-red-500 transition-all duration-300 hover:-translate-y-1">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            class="p-2.5 bg-red-600 text-white rounded-lg hover:bg-red-500 transition-all duration-300 hover:-translate-y-1 active:scale-95">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                             </svg>
                         </a>
                     </div>
@@ -243,55 +180,6 @@
         </div>
     </section>
 
-
-    <!-- Floating Buttons -->
-    <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
-        <!-- Back to Top Button -->
-        <div id="backToTop" class="transition-all duration-300 ease-in-out transform scale-0 opacity-0">
-            <a href="#home"
-                class="flex items-center justify-center w-12 h-12 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition-all duration-300">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18">
-                    </path>
-                </svg>
-            </a>
-        </div>
-
-        <!-- WhatsApp Button -->
-        <div class="relative group">
-            <!-- Pulse effect -->
-            <div class="absolute inset-0 rounded-full bg-green-500 opacity-20 group-hover:opacity-30 animate-ping">
-            </div>
-
-            <!-- WhatsApp button -->
-            <a href="https://wa.me/6281290413175?text=Halo%20Rai%2C%20saya%20ingin%20bekerja%20sama%20dengan%20anda" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="relative flex items-center group">
-                <!-- Tooltip -->
-                <div class="absolute right-full mr-4 invisible group-hover:visible">
-                    <div class="bg-gray-800 text-white text-sm py-2 px-3 rounded-lg whitespace-nowrap">
-                        Chat on WhatsApp
-                        <!-- Arrow -->
-                        <div
-                            class="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 rotate-45 w-2 h-2 bg-gray-800">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Button -->
-                <div
-                    class="flex items-center justify-center w-12 h-12 bg-green-500 hover:bg-green-600 rounded-full shadow-lg transition-all duration-300 hover:shadow-green-500/25 hover:shadow-xl">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"
-                        class="transform group-hover:scale-110 transition-transform duration-300">
-                        <path
-                            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z" />
-                    </svg>
-                </div>
-            </a>
-        </div>
-    </div>
-
     <!-- About Section -->
     <section id="about" class="py-16 md:py-20 bg-gray-50 dark:bg-gray-800">
         <div class="container mx-auto px-4 md:px-6">
@@ -299,14 +187,14 @@
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">About Me</h2>
                 <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    I'm a passionate Full Stack Developer with 2 years of experience in creating web applications.
-                    My journey in web development started with a curiosity for building things, and now I help
-                    businesses bring their ideas to life through clean, efficient, and user-friendly solutions.
+                    I'm a passionate Information Systems Student focused on creating impactful digital experiences. 
+                    My journey combines technical expertise with creative problem-solving to deliver innovative web solutions 
+                    that make a difference.
                 </p>
             </div>
 
-            <!-- Stats Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+            <!-- Key Highlights -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 <!-- Projects Completed -->
                 <div class="text-center p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                     data-aos="fade-up" data-aos-delay="100">
@@ -347,103 +235,6 @@
                     </div>
                     <h3 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-2">2+</h3>
                     <p class="text-gray-600 dark:text-gray-300">Years Experience</p>
-                </div>
-            </div>
-
-            <!-- Expertise Areas Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                <!-- Frontend Development -->
-                <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-blue-500 dark:text-blue-400 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Frontend Development</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                alt="HTML" class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">HTML</span>
-                        </div>
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                alt="CSS" class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">CSS</span>
-                        </div>
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                alt="JavaScript" class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">JavaScript</span>
-                        </div>
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                                alt="React" class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">React</span>
-                        </div>
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.simpleicons.org/tailwindcss/38BDF8" alt="Tailwind"
-                                class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">Tailwind</span>
-                        </div>
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                                alt="Bootstrap" class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Backend Development -->
-                <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-blue-500 dark:text-blue-400 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Backend Development</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP"
-                                class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">PHP</span>
-                        </div>
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">Laravel</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Database Management -->
-                <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-blue-500 dark:text-blue-400 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3z M7 8h10M7 12h10M7 16h10" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Database Management</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                alt="MySQL" class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">MySQL</span>
-                        </div>
-                        <div class="flex items-center p-2 bg-gray-100 dark:bg-gray-600 rounded-lg">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                                alt="PostgreSQL" class="w-5 h-5 mr-2">
-                            <span class="text-sm text-gray-700 dark:text-gray-200">PostgreSQL</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -511,7 +302,7 @@
                 <!-- PHP -->
                 <div class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                     data-aos="fade-up" data-aos-delay="400">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP"
+                    <img src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP Logo"
                         class="w-16 h-16 mb-2 hover:scale-110 hover:rotate-6 transition-transform">
                     <span class="text-gray-700 dark:text-gray-200 font-medium">PHP</span>
                 </div>
@@ -555,125 +346,163 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Landing Page Project -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg group 
+                    transition-all duration-300 
+                    hover:scale-105 hover:shadow-xl 
+                    hover:ring-4 hover:ring-blue-500/30" 
                     data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative group h-48 overflow-hidden">
-                        <img src="img/landing-page.png" alt="Landing Page" class="w-full h-full object-cover">
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center space-x-4 transition-opacity duration-300">
-                            <a href="https://github.com/BahasKoding/LP-Hotels" target="_blank" rel="noopener noreferrer"
-                                class="p-2 bg-white dark:bg-gray-800 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                                </svg>
-                            </a>
-                            <a href="https://bahaskoding.github.io/LP-Hotels/" target="_blank" rel="noopener noreferrer"
-                                class="p-2 bg-white dark:bg-gray-800 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
-                                </svg>
-                            </a>
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                            alt="Landing Page" class="w-full h-full object-cover 
+                            transition-all duration-300 
+                            group-hover:brightness-75 group-hover:scale-110">
+                        <div class="absolute inset-0 
+                            flex items-center justify-center 
+                            bg-black bg-opacity-0 group-hover:bg-opacity-30 
+                            transition-all duration-300">
+                            <div class="opacity-0 group-hover:opacity-100 
+                                transition-opacity duration-300 
+                                text-center">
+                                <a href="#" class="inline-block px-6 py-2 
+                                    bg-white text-gray-800 
+                                    rounded-full 
+                                    font-medium 
+                                    shadow-md
+                                    transform translate-y-4 group-hover:translate-y-0
+                                    transition-all duration-500
+                                    hover:bg-gray-100">
+                                    View Details
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col h-[calc(100%-12rem)]">
                         <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Landing Page</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Customize Modern Design Landing Page</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">Customize Modern Design Landing Page</p>
                         <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-200 rounded-full text-sm">HTML</span>
-                            <span
-                                class="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-200 rounded-full text-sm">Tailwind
-                                CSS</span>
-                            <span
-                                class="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-200 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-600 
+                                text-gray-600 dark:text-gray-200 
+                                rounded-full text-sm
+                                transition-colors duration-300
+                                hover:bg-blue-100 hover:text-blue-600">HTML</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-600 
+                                text-gray-600 dark:text-gray-200 
+                                rounded-full text-sm
+                                transition-colors duration-300
+                                hover:bg-blue-100 hover:text-blue-600">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-600 
+                                text-gray-600 dark:text-gray-200 
+                                rounded-full text-sm
+                                transition-colors duration-300
+                                hover:bg-blue-100 hover:text-blue-600">JavaScript</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Task Management System -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg group 
+                    transition-all duration-300 
+                    hover:scale-105 hover:shadow-xl 
+                    hover:ring-4 hover:ring-green-500/30" 
                     data-aos="fade-up" data-aos-delay="200">
-                    <div class="relative group h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                            alt="Task Management System" class="w-full h-full object-cover">
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center space-x-4 transition-opacity duration-300">
-                            <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="p-2 bg-white dark:bg-gray-800 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                                </svg>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="p-2 bg-white dark:bg-gray-800 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
-                                </svg>
-                            </a>
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                            alt="Task Management System" class="w-full h-full object-cover 
+                            transition-all duration-300 
+                            group-hover:brightness-75 group-hover:scale-110">
+                        <div class="absolute inset-0 
+                            flex items-center justify-center 
+                            bg-black bg-opacity-0 group-hover:bg-opacity-30 
+                            transition-all duration-300">
+                            <div class="opacity-0 group-hover:opacity-100 
+                                transition-opacity duration-300 
+                                text-center">
+                                <a href="#" class="inline-block px-6 py-2 
+                                    bg-white text-gray-800 
+                                    rounded-full 
+                                    font-medium 
+                                    shadow-md
+                                    transform translate-y-4 group-hover:translate-y-0
+                                    transition-all duration-500
+                                    hover:bg-gray-100">
+                                    View Details
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col h-[calc(100%-12rem)]">
                         <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Task Management System</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Project management tool with real-time updates
-                        </p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">Project management tool with real-time updates</p>
                         <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-200 rounded-full text-sm">PHP</span>
-                            <span
-                                class="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-200 rounded-full text-sm">PostgreSQL</span>
-                            <span
-                                class="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-200 rounded-full text-sm">Bootstrap</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-600 
+                                text-gray-600 dark:text-gray-200 
+                                rounded-full text-sm
+                                transition-colors duration-300
+                                hover:bg-green-100 hover:text-green-600">PHP</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-600 
+                                text-gray-600 dark:text-gray-200 
+                                rounded-full text-sm
+                                transition-colors duration-300
+                                hover:bg-green-100 hover:text-green-600">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-600 
+                                text-gray-600 dark:text-gray-200 
+                                rounded-full text-sm
+                                transition-colors duration-300
+                                hover:bg-green-100 hover:text-green-600">Bootstrap</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Portfolio Website -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg group 
+                    transition-all duration-300 
+                    hover:scale-105 hover:shadow-xl 
+                    hover:ring-4 hover:ring-purple-500/30" 
                     data-aos="fade-up" data-aos-delay="300">
-                    <div class="relative group h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
-                            alt="Portfolio Website" class="w-full h-full object-cover">
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center space-x-4 transition-opacity duration-300">
-                            <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="p-2 bg-white dark:bg-gray-800 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                                </svg>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="p-2 bg-white dark:bg-gray-800 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
-                                </svg>
-                            </a>
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                            alt="Portfolio Website" class="w-full h-full object-cover 
+                            transition-all duration-300 
+                            group-hover:brightness-75 group-hover:scale-110">
+                        <div class="absolute inset-0 
+                            flex items-center justify-center 
+                            bg-black bg-opacity-0 group-hover:bg-opacity-30 
+                            transition-all duration-300">
+                            <div class="opacity-0 group-hover:opacity-100 
+                                transition-opacity duration-300 
+                                text-center">
+                                <a href="#" class="inline-block px-6 py-2 
+                                    bg-white text-gray-800 
+                                    rounded-full 
+                                    font-medium 
+                                    shadow-md
+                                    transform translate-y-4 group-hover:translate-y-0
+                                    transition-all duration-500
+                                    hover:bg-gray-100">
+                                    View Details
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col h-[calc(100%-12rem)]">
                         <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Portfolio Website</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Modern portfolio website with smooth animations
-                        </p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">Modern portfolio website with smooth animations</p>
                         <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-200 rounded-full text-sm">React</span>
-                            <span
-                                class="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-200 rounded-full text-sm">Tailwind
-                                CSS</span>
-                            <span
-                                class="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-200 rounded-full text-sm">Framer
-                                Motion</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-600 
+                                text-gray-600 dark:text-gray-200 
+                                rounded-full text-sm
+                                transition-colors duration-300
+                                hover:bg-purple-100 hover:text-purple-600">React</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-600 
+                                text-gray-600 dark:text-gray-200 
+                                rounded-full text-sm
+                                transition-colors duration-300
+                                hover:bg-purple-100 hover:text-purple-600">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-600 
+                                text-gray-600 dark:text-gray-200 
+                                rounded-full text-sm
+                                transition-colors duration-300
+                                hover:bg-purple-100 hover:text-purple-600">Framer Motion</span>
                         </div>
                     </div>
                 </div>
@@ -768,8 +597,8 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Contact Info -->
-                <div class="space-y-4" data-aos="fade-right">
+                <!-- Contact Info (Hidden on Mobile) -->
+                <div class="hidden md:block space-y-4" data-aos="fade-right">
                     <div
                         class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg transition-colors duration-300">
                         <div class="p-3 bg-blue-100 dark:bg-blue-900 rounded-full">
@@ -818,7 +647,7 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
+                <!-- Contact Form (Full Width on Mobile) -->
                 <form id="contact-form" name="contact-form" class="space-y-6" data-aos="fade-left">
                     <div class="relative">
                         <div class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-gray-400">
@@ -851,14 +680,14 @@
                             class="w-full pl-12 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 hover:border-blue-400 dark:hover:border-blue-500 resize-none" name="pesan"></textarea>
                     </div>
                     <button type="submit"
-                        class="group w-full md:w-auto px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-500 dark:to-blue-400 text-white rounded-lg hover:from-blue-700 hover:to-blue-600 dark:hover:from-blue-600 dark:hover:to-blue-500 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg flex items-center justify-center space-x-2">
-                        <span>Send Message</span>
-                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </button>
+                    class="group w-full md:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg flex items-center justify-center space-x-2">
+                    <span>Send Message</span>
+                    <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </button>
                 </form>
             </div>
         </div>
@@ -885,15 +714,33 @@
                 </div>
 
                 <!-- Quick Links -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
-                    <nav>
-                        <a href="#home" class="block text-gray-400 hover:text-white mb-2">Home</a>
-                        <a href="#about" class="block text-gray-400 hover:text-white mb-2">About</a>
-                        <a href="#skills" class="block text-gray-400 hover:text-white mb-2">Skills</a>
-                        <a href="#services" class="block text-gray-400 hover:text-white mb-2">Services</a>
-                        <a href="#projects" class="block text-gray-400 hover:text-white mb-2">Projects</a>
-                        <a href="#contact" class="block text-gray-400 hover:text-white mb-2">Contact</a>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-lg font-semibold mb-6 tracking-wide text-white">Quick Links</h3>
+                    <nav class="grid gap-3">
+                        <a href="#home" class="group flex items-center text-gray-400 hover:text-blue-400 transition-all duration-300">
+                            <span class="w-0 group-hover:w-4 h-[2px] bg-blue-400 mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                            <span class="transform group-hover:translate-x-1 transition-transform duration-300">Home</span>
+                        </a>
+                        <a href="#about" class="group flex items-center text-gray-400 hover:text-blue-400 transition-all duration-300">
+                            <span class="w-0 group-hover:w-4 h-[2px] bg-blue-400 mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                            <span class="transform group-hover:translate-x-1 transition-transform duration-300">About</span>
+                        </a>
+                        <a href="#skills" class="group flex items-center text-gray-400 hover:text-blue-400 transition-all duration-300">
+                            <span class="w-0 group-hover:w-4 h-[2px] bg-blue-400 mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                            <span class="transform group-hover:translate-x-1 transition-transform duration-300">Skills</span>
+                        </a>
+                        <a href="#services" class="group flex items-center text-gray-400 hover:text-blue-400 transition-all duration-300">
+                            <span class="w-0 group-hover:w-4 h-[2px] bg-blue-400 mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                            <span class="transform group-hover:translate-x-1 transition-transform duration-300">Services</span>
+                        </a>
+                        <a href="#projects" class="group flex items-center text-gray-400 hover:text-blue-400 transition-all duration-300">
+                            <span class="w-0 group-hover:w-4 h-[2px] bg-blue-400 mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                            <span class="transform group-hover:translate-x-1 transition-transform duration-300">Projects</span>
+                        </a>
+                        <a href="#contact" class="group flex items-center text-gray-400 hover:text-blue-400 transition-all duration-300">
+                            <span class="w-0 group-hover:w-4 h-[2px] bg-blue-400 mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                            <span class="transform group-hover:translate-x-1 transition-transform duration-300">Contact</span>
+                        </a>
                     </nav>
                 </div>
 
@@ -903,27 +750,24 @@
                     <div class="flex space-x-4">
                         <a href="https://github.com/BahasKoding" target="_blank" rel="noopener noreferrer"
                             class="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-all duration-300 hover:-translate-y-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="w-5 h-5">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white">
+                                <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                             </svg>
                         </a>
                         <a href="https://linkedin.com/in/rai-rakhmat-syarifudin-supardi-b04818236" target="_blank"
                             rel="noopener noreferrer"
                             class="p-3 bg-blue-600 rounded-full hover:bg-blue-500 transition-all duration-300 hover:-translate-y-1">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white fill-current">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                             </svg>
                         </a>
                         <a href="mailto:business.rkhmt@gmail.com"
                             class="p-3 bg-red-600 rounded-full hover:bg-red-500 transition-all duration-300 hover:-translate-y-1">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white fill-current">
+                                <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
                             </svg>
                         </a>
                     </div>
@@ -931,20 +775,69 @@
             </div>
 
             <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-                <p class="text-sm text-gray-400 mb-2">&copy; 2024 BahasKoding. All rights reserved.</p>
+                <p class="text-sm text-gray-400 mb-2">© 2024 • All code crafted with precision by BahasKoding</p>
                 <p class="text-sm text-gray-400">
-                    Created with
-                    <span class="text-red-500">❤️</span>
+                    Designed & Built with
+                    <span class="text-red-500 mx-1">❤️</span>
                     by
-                    <a class="text-blue-400 hover:text-blue-300 font-medium transition-colors duration-300"
+                    <a class="text-blue-400 hover:text-blue-300 font-medium transition-colors duration-300 ml-1"
                         href="https://github.com/bahaskoding" target="_blank" rel="noopener noreferrer">
                         Rai
                     </a>
-                    using HTML & Tailwind CSS.
+                    <span class="mx-1">•</span>
+                    <span class="text-gray-500">Powered by HTML & Tailwind CSS</span>
                 </p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+        <!-- Back to Top Button -->
+        <div id="backToTop" class="transition-all duration-300 ease-in-out transform scale-0 opacity-0">
+            <a href="#home"
+                class="flex items-center justify-center w-12 h-12 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition-all duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18">
+                    </path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- WhatsApp Button -->
+        <div class="relative group">
+            <!-- Pulse effect -->
+            <div class="absolute inset-0 rounded-full bg-green-500 opacity-20 group-hover:opacity-30 animate-ping">
+            </div>
+
+            <!-- WhatsApp button -->
+            <a href="https://wa.me/6281290413175?text=Halo%20Rai%2C%20saya%20ingin%20bekerja%20sama%20dengan%20anda" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="relative flex items-center group">
+                <!-- Tooltip -->
+                <div class="absolute right-full mr-4 invisible group-hover:visible">
+                    <div class="bg-gray-800 text-white text-sm py-2 px-3 rounded-lg whitespace-nowrap">
+                        Chat on WhatsApp
+                        <!-- Arrow -->
+                        <div
+                            class="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 rotate-45 w-2 h-2 bg-gray-800">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div
+                    class="flex items-center justify-center w-12 h-12 bg-green-500 hover:bg-green-600 rounded-full shadow-lg transition-all duration-300 hover:shadow-green-500/25 hover:shadow-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"
+                        class="transform group-hover:scale-110 transition-transform duration-300">
+                        <path
+                            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="js/navbar.js"></script>
@@ -973,7 +866,13 @@
                 }
             });
         });
+        
+        // Initialize dark mode based on local storage
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        }
     </script>
+    
 </body>
 
 </html>
